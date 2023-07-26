@@ -1,5 +1,5 @@
 // index.js
-const express = require('express')
+import express from "express"
 // import { MongoClient, ObjectId } from 'mongodb'
 // import cors from 'cors'
 // import jwt from 'jsonwebtoken'
