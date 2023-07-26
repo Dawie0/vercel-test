@@ -1,10 +1,10 @@
 // index.js
-import express from 'express'
-import { MongoClient, ObjectId } from 'mongodb'
-import cors from 'cors'
-import jwt from 'jsonwebtoken'
-import bcrypt from 'bcryptjs'
-import dotenv from 'dotenv'
+const express = require('express')
+// import { MongoClient, ObjectId } from 'mongodb'
+// import cors from 'cors'
+// import jwt from 'jsonwebtoken'
+// import bcrypt from 'bcryptjs'
+// import dotenv from 'dotenv'
 
 const app = express()
 const PORT = 4000
