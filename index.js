@@ -1,8 +1,19 @@
 // index.js
 import express from 'express'
+import { MongoClient, ObjectId } from 'mongodb'
+import cors from 'cors'
+import jwt from 'jsonwebtoken'
+import bcrypt from 'bcryptjs'
+import dotenv from 'dotenv'
 
 const app = express()
 const PORT = 4000
+
+dotenv.config()
+
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
+app.use(cors())
 
 app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
