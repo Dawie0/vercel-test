@@ -11,9 +11,7 @@ const PORT = 4000
 
 dotenv.config()
 
-app.use(express.urlencoded({ extended: false }))
-app.use(express.json())
-app.use(cors())
+
 
 app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
